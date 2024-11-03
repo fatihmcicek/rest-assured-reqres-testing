@@ -22,16 +22,28 @@ This project demonstrates API testing using REST Assured framework with ReqRes A
     - Login User
 
 ## Project Structure
-src
-├── test
-│   ├── java
-│   │   └── com.fatihmcicek
-│   │       ├── tests
-│   │       ├── utils
-│   │       └── config
-│   └── resources
-└── main
-└── resources
+```plaintext
+src/
+├── test/
+│   ├── java/
+│   │   └── com/
+│   │       └── restassured/
+│   │           └── reqres/
+│   │               ├── config/
+│   │               │   └── ConfigManager.java
+│   │               ├── models/
+│   │               │   ├── User.java
+│   │               │   ├── UserResponse.java
+│   │               │   └── UsersListResponse.java
+│   │               ├── tests/
+│   │               │   ├── BaseTest.java
+│   │               │   └── UserTests.java
+│   │               └── utils/
+│   │                   └── TestUtils.java
+│   └── resources/
+│       ├── config.properties
+│       └── log4j2.xml
+└── pom.xml
 
 ## How to Run Tests
 mvn clean test
