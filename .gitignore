@@ -1,9 +1,11 @@
+```gitignore
 # IDE files
 .idea/
 *.iml
-*.iws
-*.ipr
-
+.vscode/
+.settings/
+.project
+.classpath
 # Maven
 target/
 pom.xml.tag
@@ -11,6 +13,12 @@ pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
+
+# Build files
+target/
+build/
+out/
+*.class
 
 # Logs
 logs/

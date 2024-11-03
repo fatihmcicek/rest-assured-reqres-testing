@@ -11,15 +11,15 @@ public class BaseTest {
     protected RequestSpecification requestSpec;
     protected ConfigManager configManager;
 
-    @BeforeClass
-    public void setup() {
+    @BeforeClass(alwaysRun = true)
+    public void setUp() {
         configManager = ConfigManager.getInstance();
+
         requestSpec = new RequestSpecBuilder()
                 .setBaseUri(configManager.getProperty("base.url"))
                 .setContentType(ContentType.JSON)
                 .build();
 
-        // Enable logging for failed tests
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
     }
 }
