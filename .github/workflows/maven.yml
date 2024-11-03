@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,23 +18,16 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+          cache: maven
 
-      - name: Build with Maven
-        run: mvn clean verify
+      - name: Run Tests
+        run: mvn clean test
 
-      - name: Generate Allure Report
-        run: mvn allure:report
-
-      - name: Upload Allure Report
+      # Test Results'ı artifact olarak saklayalım
+      - name: Store Test Results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: target/site/allure-maven-plugin
-          retention-days: 30
-
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
+          name: test-results
+          path: target/surefire-reports
+          retention-days: 14

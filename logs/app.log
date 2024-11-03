@@ -624,3 +624,35 @@
     "job": "Senior QA"
 }
 
+21:34:59.988 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:34:59.991 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:34:59.991 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+21:35:01.200 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+21:35:01.200 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:35:01.453 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:35:01.453 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+21:35:01.775 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:35:01.775 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:35:01.845 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:35:01.845 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:35:01.927 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:35:01.928 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+21:35:02.036 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:35:02.037 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+21:35:02.255 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+21:35:02.256 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:35:02.256 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+21:35:02.470 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+21:35:02.470 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:35:02.470 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
