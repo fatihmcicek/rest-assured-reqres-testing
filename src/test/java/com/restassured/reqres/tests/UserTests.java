@@ -4,8 +4,13 @@ import com.restassured.reqres.models.UserResponse;
 import com.restassured.reqres.models.UsersListResponse;
 import com.restassured.reqres.utils.TestUtils;
 import io.qameta.allure.*;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.*;
 
@@ -197,4 +202,59 @@ public class UserTests extends BaseTest {
 
         TestUtils.logResponse(response);
     }
+
+    @Test(description = "GET - List Users with Filter", groups = "get")
+    @Story("User Listing with Filter")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test to verify user listing functionality with specific pagination")
+    public void testListUsersWithFilter() {
+        int page = 1;
+        TestUtils.logRequest(configManager.getProperty("users.endpoint") + "?page=" + page, "GET", null);
+
+        Response response = given()
+                .spec(requestSpec)
+                .queryParam("page", page)
+                .when()
+                .get(configManager.getProperty("users.endpoint"))
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
+
+        TestUtils.logResponse(response);
+        UsersListResponse usersResponse = TestUtils.deserializeResponse(response, UsersListResponse.class);
+
+        assertNotNull(usersResponse.getData());
+        assertFalse(usersResponse.getData().isEmpty(), "User list should not be empty.");
+        assertEquals(usersResponse.getPage().intValue(), page, "Returned page does not match the expected page.");
+        assertTrue(usersResponse.getPer_page() > 0, "There should be at least one user per page.");
+    }
+
+    @Test(description = "GET - Retrieve User Details by ID", groups = "get")
+    @Story("User Retrieval")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test to verify retrieving a user's details by their ID")
+    public void testGetUserDetailsById() {
+        int userId = 2; // Example user ID
+        TestUtils.logRequest(configManager.getProperty("users.endpoint") + "/" + userId, "GET", null);
+
+        Response response = given()
+                .spec(requestSpec)
+                .when()
+                .get(configManager.getProperty("users.endpoint") + "/" + userId)
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
+
+        TestUtils.logResponse(response);
+        UserResponse userResponse = TestUtils.deserializeResponse(response, UserResponse.class);
+
+        assertNotNull(userResponse.getData(), "User data should not be null.");
+        assertEquals(userResponse.getData().getId().intValue(), userId, "Retrieved user ID does not match the requested ID.");
+        assertNotNull(userResponse.getData().getEmail(), "User email should not be null.");
+        assertNotNull(userResponse.getData().getFirst_name(), "User first name should not be null.");
+        assertNotNull(userResponse.getData().getLast_name(), "User last name should not be null.");
+    }
+
 }
