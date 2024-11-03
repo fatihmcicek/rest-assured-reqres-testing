@@ -21,10 +21,6 @@ out/
 *.class
 
 # Logs
-logs/
-*.log
-
-# OS-specific files
 .DS_Store
 .DS_Store?
 ._*

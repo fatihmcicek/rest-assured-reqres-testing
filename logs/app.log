@@ -1,0 +1,626 @@
+14:59:56.440 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+14:59:56.440 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+14:59:56.440 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+14:59:56.442 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+14:59:56.442 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+14:59:56.442 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+14:59:56.442 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+14:59:57.344 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+14:59:57.344 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+14:59:57.344 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+14:59:57.344 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+14:59:57.345 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+14:59:57.345 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"292","createdAt":"2024-11-03T11:59:57.386Z"}
+14:59:57.387 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+14:59:57.387 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+14:59:57.387 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+14:59:57.387 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+14:59:57.466 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+14:59:57.467 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+14:59:57.477 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+14:59:57.478 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+14:59:57.503 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+14:59:57.503 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+14:59:57.504 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+14:59:57.504 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+14:59:57.504 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+14:59:57.504 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+14:59:57.735 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+14:59:57.735 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T11:59:57.814Z"}
+14:59:57.740 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+14:59:57.740 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T11:59:57.819Z"}
+15:06:36.980 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:06:36.980 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:06:36.980 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+15:06:36.982 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+15:06:36.982 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:06:36.982 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:06:36.982 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+15:06:38.052 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:06:38.052 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+15:06:38.052 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+15:06:38.052 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"854","createdAt":"2024-11-03T12:06:38.081Z"}
+15:06:38.052 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+15:06:38.052 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+15:06:38.088 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:06:38.088 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:06:38.088 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:06:38.088 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+15:06:38.159 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:06:38.160 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:06:38.162 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:06:38.163 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:06:38.202 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+15:06:38.203 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:06:38.203 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+15:06:38.204 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:06:38.204 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:06:38.204 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+15:06:38.414 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:06:38.414 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T12:06:38.459Z"}
+15:06:38.466 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:06:38.467 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T12:06:38.518Z"}
+15:24:14.122 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:14.122 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:24:14.122 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+15:24:14.124 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+15:24:14.124 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:24:14.124 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:14.124 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+15:24:15.055 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+15:24:15.055 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:24:15.055 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+15:24:15.056 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"207","createdAt":"2024-11-03T12:24:15.081Z"}
+15:24:15.060 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+15:24:15.061 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+15:24:15.095 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:15.095 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:15.096 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:15.096 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+15:24:15.169 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:15.169 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:15.175 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:15.176 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:15.204 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+15:24:15.205 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:15.205 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+15:24:15.206 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:24:15.206 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:15.207 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+15:24:15.428 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:15.429 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T12:24:15.502Z"}
+15:24:15.432 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:15.432 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T12:24:15.503Z"}
+15:24:24.561 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:24.561 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+15:24:24.561 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:24:24.562 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+15:24:24.563 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:24.563 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:24:24.563 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+15:24:25.277 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+15:24:25.277 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+15:24:25.310 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:25.310 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:25.354 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:24:25.354 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"490","createdAt":"2024-11-03T12:24:25.430Z"}
+15:24:25.355 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+15:24:25.356 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+15:24:25.359 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:25.359 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+15:24:25.394 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:25.394 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:25.435 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+15:24:25.436 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:25.436 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+15:24:25.451 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:25.452 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:25.459 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:24:25.459 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:25.460 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+15:24:25.621 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:25.622 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T12:24:25.704Z"}
+15:24:25.682 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:25.682 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T12:24:25.736Z"}
+15:24:49.716 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:24:49.716 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:49.716 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+15:24:49.717 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:24:49.717 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+15:24:49.717 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:49.718 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+15:24:50.712 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+15:24:50.712 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+15:24:50.747 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:50.747 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:50.813 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+15:24:50.814 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+15:24:50.816 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:50.816 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:50.818 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:24:50.818 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+15:24:50.816 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:24:50.819 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"318","createdAt":"2024-11-03T12:24:50.884Z"}
+15:24:50.905 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+15:24:50.905 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:50.905 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+15:24:50.909 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:50.909 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:24:50.921 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:24:50.922 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:24:50.922 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+15:24:51.132 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:51.132 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T12:24:51.202Z"}
+15:24:51.138 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:24:51.139 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T12:24:51.192Z"}
+15:26:06.508 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:26:06.508 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+15:26:06.508 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:26:06.510 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:26:06.510 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:26:06.510 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+15:26:06.511 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+15:26:07.221 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+15:26:07.222 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+15:26:07.258 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:26:07.259 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:26:07.341 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:26:07.342 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:26:07.351 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:26:07.352 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"200","createdAt":"2024-11-03T12:26:07.429Z"}
+15:26:07.370 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+15:26:07.370 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+15:26:07.374 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:26:07.374 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+15:26:07.384 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+15:26:07.385 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:26:07.385 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+15:26:07.448 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:26:07.449 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:26:07.456 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:26:07.456 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:26:07.457 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+15:26:07.592 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:26:07.593 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T12:26:07.666Z"}
+15:26:07.667 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:26:07.667 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T12:26:07.745Z"}
+15:33:13.966 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:33:13.967 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:33:13.967 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Lead Developer"
+}
+
+15:33:14.774 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:33:14.775 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Lead Developer","updatedAt":"2024-11-03T12:33:14.823Z"}
+15:34:11.931 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:34:11.933 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:34:11.933 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "email": "updated.email@example.com"
+}
+
+15:34:12.851 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:34:12.851 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"email":"updated.email@example.com","updatedAt":"2024-11-03T12:34:12.897Z"}
+15:34:17.000 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+15:34:17.001 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:34:17.002 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "email": "updated.email@example.com"
+}
+
+15:34:17.764 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:34:17.764 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"email":"updated.email@example.com","updatedAt":"2024-11-03T12:34:17.813Z"}
+15:35:02.613 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:35:02.614 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:35:03.244 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:35:03.244 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:36:07.120 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:36:07.122 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:36:08.016 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:36:08.016 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:36:34.054 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:36:34.056 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:36:34.056 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "invalidField": "Test Engineer"
+}
+
+15:37:08.306 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:37:08.308 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:37:08.308 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "invalidField": "Test Engineer"
+}
+
+15:37:09.056 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:37:09.056 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"invalidField":"Test Engineer","id":"399","createdAt":"2024-11-03T12:37:09.100Z"}
+15:37:17.100 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:37:17.101 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:37:17.102 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "invalidField": "Test Engineer"
+}
+
+15:37:17.879 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:37:17.880 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"invalidField":"Test Engineer","id":"885","createdAt":"2024-11-03T12:37:17.909Z"}
+15:42:29.572 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:42:29.575 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+15:42:30.513 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:42:30.514 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:43:46.709 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+15:43:46.711 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+15:43:47.357 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+15:43:47.357 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+15:44:12.635 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:44:12.637 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:44:12.637 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "",
+    "job": "QA Lead"
+}
+
+15:44:36.215 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+15:44:36.216 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+15:44:36.216 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "",
+    "job": "QA Lead"
+}
+
+15:44:37.020 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+15:44:37.020 [main] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"","job":"QA Lead","id":"791","createdAt":"2024-11-03T12:44:37.070Z"}
+17:35:23.769 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:35:23.769 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+17:35:23.769 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+17:35:23.771 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+17:35:23.771 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:35:23.771 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+17:35:23.771 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+17:35:24.678 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+17:35:24.678 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+17:35:24.678 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+17:35:24.679 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"995","createdAt":"2024-11-03T14:35:24.703Z"}
+17:35:24.679 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+17:35:24.679 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+17:35:24.720 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:35:24.720 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:35:24.720 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:35:24.721 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:35:24.784 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:24.784 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:35:24.807 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:24.808 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:35:24.820 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:35:24.820 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+17:35:24.820 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:35:24.821 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+17:35:24.892 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:24.893 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:35:24.893 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:24.893 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:35:24.901 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+17:35:24.901 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+17:35:24.901 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:35:24.901 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+17:35:24.902 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:35:24.902 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+17:35:25.102 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:25.104 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T14:35:25.151Z"}
+17:35:25.110 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:35:25.110 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T14:35:25.149Z"}
+17:45:07.492 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:45:07.492 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+17:45:07.492 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+17:45:07.494 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+17:45:07.494 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+17:45:07.494 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:45:07.494 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+17:45:08.567 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+17:45:08.567 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+17:45:08.567 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"1","createdAt":"2024-11-03T14:45:08.553Z"}
+17:45:08.567 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+17:45:08.568 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+17:45:08.568 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+17:45:08.616 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:45:08.616 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:45:08.617 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:45:08.617 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:45:08.707 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:08.708 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:45:08.736 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:08.736 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:45:08.747 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:45:08.747 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:45:08.747 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+17:45:08.747 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+17:45:08.829 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:08.829 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:45:08.840 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+17:45:08.840 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:45:08.841 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+17:45:08.966 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:08.967 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:45:08.977 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+17:45:08.977 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:45:08.978 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+17:45:09.042 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:09.044 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T14:45:09.058Z"}
+17:45:09.222 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:45:09.222 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T14:45:09.219Z"}
+17:49:22.435 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+17:49:22.435 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:49:22.435 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+17:49:22.437 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+17:49:22.437 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+17:49:22.437 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:49:22.437 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+17:49:23.365 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+17:49:23.365 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+17:49:23.365 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"122","createdAt":"2024-11-03T14:49:23.353Z"}
+17:49:23.365 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+17:49:23.406 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:49:23.406 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:49:23.477 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.479 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:49:23.497 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+17:49:23.497 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+17:49:23.501 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:49:23.501 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:49:23.515 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:49:23.515 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+17:49:23.585 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.586 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:49:23.589 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:49:23.589 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+17:49:23.668 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.668 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:49:23.672 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+17:49:23.672 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:49:23.672 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+17:49:23.674 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+17:49:23.675 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:49:23.675 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+17:49:23.699 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.699 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:49:23.850 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.850 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T14:49:23.868Z"}
+17:49:23.888 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:49:23.888 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T14:49:23.900Z"}
+17:51:25.291 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+17:51:25.291 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:51:25.291 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+17:51:25.293 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:51:25.293 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+17:51:25.293 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+17:51:25.293 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+17:51:26.205 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 404
+17:51:26.205 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {}
+17:51:26.254 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:51:26.255 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:51:26.315 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 201
+17:51:26.315 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 204
+17:51:26.316 [TestNG-test=User Management Tests-1] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Test Engineer","job":"QA Lead","id":"440","createdAt":"2024-11-03T14:51:26.324Z"}
+17:51:26.316 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: 
+17:51:26.320 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.320 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:51:26.320 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:51:26.321 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:51:26.373 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:51:26.373 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+17:51:26.384 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.384 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:51:26.387 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+17:51:26.388 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+17:51:26.454 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.454 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:51:26.466 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+17:51:26.466 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:51:26.467 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+17:51:26.468 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.468 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+17:51:26.476 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+17:51:26.477 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+17:51:26.477 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+17:51:26.666 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.666 [TestNG-test=User Management Tests-2] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"job":"Team Lead","updatedAt":"2024-11-03T14:51:26.677Z"}
+17:51:26.690 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Status Code: 200
+17:51:26.690 [TestNG-test=User Management Tests-3] INFO  com.restassured.reqres.utils.TestUtils.logResponse() - Response Body: {"name":"Updated Engineer","job":"Senior QA","updatedAt":"2024-11-03T14:51:26.702Z"}
+18:12:25.900 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+18:12:25.903 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+18:12:25.904 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+18:12:27.048 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+18:12:27.048 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:27.294 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:27.294 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+18:12:27.533 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:27.533 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:27.628 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:27.628 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:27.696 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:27.697 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+18:12:27.819 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:27.820 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+18:12:27.877 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+18:12:27.878 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:27.878 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+18:12:28.094 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+18:12:28.095 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:28.095 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+18:12:51.612 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+18:12:51.619 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+18:12:51.619 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+18:12:52.801 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+18:12:52.801 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:53.053 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:53.053 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+18:12:53.157 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:53.158 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:53.234 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:53.234 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:53.302 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:53.302 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+18:12:53.407 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:12:53.407 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+18:12:53.476 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+18:12:53.477 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:53.477 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+18:12:53.682 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+18:12:53.683 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:12:53.683 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+18:19:59.647 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+18:19:59.650 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+18:19:59.651 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+18:20:00.835 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+18:20:00.836 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:20:01.060 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:20:01.060 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+18:20:01.360 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:20:01.360 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:20:01.468 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:20:01.468 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:20:01.570 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:20:01.570 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+18:20:01.702 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+18:20:01.702 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+18:20:01.804 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+18:20:01.804 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:20:01.804 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+18:20:01.999 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+18:20:02.000 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+18:20:02.000 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
