@@ -1,6 +1,6 @@
 # REST Assured ReqRes API Testing Project
 
-![Build Status](https://github.com/fatihmcicek/rest-assured-reqres-testing/actions/workflows/maven.yml/badge.svg)
+[![Rest Assured API Testing](https://github.com/fatihmcicek/rest-assured-reqres-testing/actions/workflows/maven.yml/badge.svg)](https://github.com/fatihmcicek/rest-assured-reqres-testing/actions/workflows/maven.yml)
 
 ## Overview
 ...

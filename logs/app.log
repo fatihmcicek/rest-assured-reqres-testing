@@ -656,3 +656,147 @@
     "job": "Senior QA"
 }
 
+21:42:55.272 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:42:55.277 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:42:55.277 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "",
+    "job": ""
+}
+
+21:42:56.377 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:56.377 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/999
+21:42:56.620 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:42:56.620 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /login
+21:42:56.621 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "email": "invalid@email.com",
+    "password": "wrongpassword"
+}
+
+21:42:56.832 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:42:56.833 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:42:56.833 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+21:42:57.053 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+21:42:57.053 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:42:57.267 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:57.268 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+21:42:57.523 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:57.523 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:42:57.611 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:57.611 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:42:57.683 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:57.683 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+21:42:57.789 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:42:57.789 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+21:42:57.849 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+21:42:57.849 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:42:57.849 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+21:42:58.050 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+21:42:58.050 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:42:58.050 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+21:45:47.561 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:45:47.564 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:45:47.564 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+21:45:48.708 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+21:45:48.709 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:45:48.964 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:45:48.965 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+21:45:49.043 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:45:49.043 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:45:49.125 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:45:49.125 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:45:49.193 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:45:49.193 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+21:45:49.266 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:45:49.267 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+21:45:49.349 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+21:45:49.349 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:45:49.349 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+21:45:49.589 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+21:45:49.589 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:45:49.590 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+
+21:46:12.159 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:46:12.162 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:46:12.162 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "",
+    "job": ""
+}
+
+21:46:13.234 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:46:13.235 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/999
+21:46:13.563 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:46:13.563 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /login
+21:46:13.563 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "email": "invalid@email.com",
+    "password": "wrongpassword"
+}
+
+21:47:39.881 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:47:39.884 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:47:39.884 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "",
+    "job": ""
+}
+
+21:47:41.017 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:41.017 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/999
+21:47:41.127 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:47:41.127 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /login
+21:47:41.128 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "email": "invalid@email.com",
+    "password": "wrongpassword"
+}
+
+21:47:41.331 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: POST
+21:47:41.331 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users
+21:47:41.331 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Test Engineer",
+    "job": "QA Lead"
+}
+
+21:47:41.550 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: DELETE
+21:47:41.551 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:47:41.753 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:41.753 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/23
+21:47:41.988 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:41.988 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:47:42.052 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:42.052 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:47:42.133 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:42.134 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=2
+21:47:42.215 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: GET
+21:47:42.216 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users?page=1
+21:47:42.297 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PATCH
+21:47:42.297 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:47:42.298 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "job": "Team Lead"
+}
+
+21:47:42.481 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Method: PUT
+21:47:42.481 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Endpoint: /users/2
+21:47:42.482 [main] INFO  com.restassured.reqres.utils.TestUtils.logRequest() - Request Body: {
+    "name": "Updated Engineer",
+    "job": "Senior QA"
+}
+

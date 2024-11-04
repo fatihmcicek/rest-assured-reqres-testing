@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="ReqRes API Test Suite" parallel="methods" thread-count="3">
-    <test name="User Management Tests">
+    <test name="User API Tests">
         <groups>
             <run>
                 <include name="get"/>
@@ -9,10 +9,12 @@
                 <include name="put"/>
                 <include name="patch"/>
                 <include name="delete"/>
+                <include name="negative"/>
             </run>
         </groups>
-        <packages>
-            <package name="com.restassured.reqres.tests.*"/>
-        </packages>
+        <classes>
+            <class name="com.restassured.reqres.tests.UserTests"/>
+            <class name="com.restassured.reqres.tests.NegativeUserTests"/>
+        </classes>
     </test>
 </suite>
